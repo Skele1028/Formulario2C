@@ -1,11 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterP/Principal.Master" AutoEventWireup="true" CodeBehind="inicioSeccion.aspx.cs" Inherits="FormularioC2.Modulos.inicioSeccion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style1 {
-            width: 14%;
-        }
-    </style>
-</asp:Content>
+    </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Panel ID="FormIniSeccion" runat="server" >
         <table>
@@ -39,9 +34,9 @@
                             <tr>
                                 <td class="tdText"></td>
                                 <td>
-                                    <label> Registrarse</label>
-                                    <label onclick="" role="link">
-                                    Aquí</label> </td>
+                                    <label> Registrarse </label>
+                                    <asp:HyperLink  ID="lkRegistrarse" runat="server" CssClass="enlace" NavigateUrl="~/Modulos/registro.aspx">Aquí</asp:HyperLink>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="tdText"></td>
