@@ -13,5 +13,20 @@ namespace FormularioC2.Modulos
         {
 
         }
+
+        protected void ibClientes_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void ibProductos_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void ibClientes_Click1(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }

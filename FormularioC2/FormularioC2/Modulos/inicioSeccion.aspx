@@ -1,7 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterP/Principal.Master" AutoEventWireup="true" CodeBehind="inicioSeccion.aspx.cs" Inherits="FormularioC2.Modulos.inicioSeccion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<<<<<<< HEAD
     <script src="../Scripts/InicioSesion.js"></script>
 </asp:Content>
+=======
+    </asp:Content>
+>>>>>>> f8cc276fe28dcc4b26bfaac034d4a89ee4eae97c
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Panel ID="FormIniSeccion" runat="server" >
         <table>
@@ -36,7 +40,11 @@
                                 <td class="tdText"></td>
                                 <td>
                                     <label> Registrarse </label>
+<<<<<<< HEAD
                                     <asp:Label ID="Label1" runat="server" Text="aquí"  href='registro.aspx' Font-Bold="True" ForeColor="#3366FF"></asp:Label>
+=======
+                                    <asp:HyperLink  ID="lkRegistrarse" runat="server" CssClass="enlace" NavigateUrl="~/Modulos/registro.aspx">Aquí</asp:HyperLink>
+>>>>>>> f8cc276fe28dcc4b26bfaac034d4a89ee4eae97c
                                 </td>
                             </tr>
                             <tr>

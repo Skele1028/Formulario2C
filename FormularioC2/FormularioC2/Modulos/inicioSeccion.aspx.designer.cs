@@ -49,7 +49,20 @@ namespace FormularioC2.Modulos {
         protected global::System.Web.UI.WebControls.TextBox txUser;
         
         /// <summary>
+<<<<<<< HEAD
         /// Control txContraseniaInicio.
+=======
+        /// lkRegistrarse control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lkRegistrarse;
+        
+        /// <summary>
+        /// Button1 control.
+>>>>>>> f8cc276fe28dcc4b26bfaac034d4a89ee4eae97c
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
