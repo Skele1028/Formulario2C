@@ -17,18 +17,24 @@
                 </asp:DropDownList>
             </td>
             <td>
-                <label>Número de documento (*):</label><br/>
-                <asp:TextBox ID="txDocumento" runat="server" CssClass="txbN" type="number"></asp:TextBox>
+                <label>Número de documento (*):</label><br />
+                <label>
+                <input id="txDocumento" type="text" runat="server" ClientIDMode="Static" onkeypress="return checkDocumento(event)"/>
+                </label>
             </td>
         </tr>
         <tr>
             <td>
                 <label>Nombre (*):</label><br />
-                <asp:TextBox CssClass="txbT" type="text" ID="txNombre" runat="server"></asp:TextBox>
+                <label>
+                <input id="txNombre" type="text" runat="server" ClientIDMode="Static" onkeypress="return checkNombre(event)"/>
+                </label>
             </td>
             <td>
                 <label>Segundo nombre:</label><br />
-                <asp:TextBox ID="txSegundoNombre" runat="server" CssClass="txbT" type="text"></asp:TextBox>
+                <label>
+                <input id="txSegundoNombre" type="text" runat="server" ClientIDMode="Static" onkeypress="return checkNombre(event)"/>
+                </label>
             </td>
         </tr>
         <tr>

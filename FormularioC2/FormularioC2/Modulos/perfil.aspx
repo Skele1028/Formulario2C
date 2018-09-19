@@ -6,8 +6,10 @@
     <table class="table">
         <tr>
             <td  colspan="3">
-                <label>Bienvenido Señor: </label> <label>User</label>
-                <div dir="rtl">
+                <label>Bienvenido Señ@r:
+                <asp:Label ID="LabelAdmin" runat="server" Font-Bold="True" Text="Admin"></asp:Label>
+                </label>
+&nbsp;<div dir="rtl">
                 <asp:HyperLink ID="lkSalir" runat="server" CssClass="enlace" NavigateUrl="~/Modulos/inicioSeccion.aspx">Salir</asp:HyperLink>
                 </div>
             </td>

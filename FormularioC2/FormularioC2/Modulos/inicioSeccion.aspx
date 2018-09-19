@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterP/Principal.Master" AutoEventWireup="true" CodeBehind="inicioSeccion.aspx.cs" Inherits="FormularioC2.Modulos.inicioSeccion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="../Scripts/InicioSesion.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script src="../Scripts/InicioSesion.js"></script>
     <asp:Panel ID="FormIniSeccion" runat="server" >
         <table>
             <tr>
@@ -14,14 +14,18 @@
                         <table class="table">
                             <tr>
                                 <td class="tdText">
-                                <td>fecha / hora</td>
+                                <td>
+                                    <asp:Label ID="LabelFecha" runat="server" Font-Bold="True" Text="Fecha"></asp:Label>
+                                    </td>
                             </tr>
                             <tr>
                                 <td class="tdText">
                                     <label>
                                     Usuario:</label> </td>
                                 <td>
-                                    <asp:TextBox ID="txUser" runat="server" CssClass="txbTI" ClientIDMode="Static"></asp:TextBox>
+                                    <label>
+                                    <input id="txUser" type="text" runat="server" ClientIDMode="Static" onkeypress="return checkUsuario(event)"/>
+                                    </label>
                                 </td>
                             </tr>
                             <tr>
@@ -42,8 +46,8 @@
                             <tr>
                                 <td class="tdText"></td>
                                 <td>
-                                    <asp:Button ID="Button1" runat="server" CssClass="button" Text="Ingresar" OnClick="Button1_Click" />
-                                    <asp:Button ID="Button2" runat="server" CssClass="button" Text="Salir" />
+                                    <asp:Button ID="Button1" runat="server" CssClass="button" Text="Ingresar" OnClick="Button1_Click"/>
+                                    <asp:Button ID="Button2" runat="server" CssClass="button" Text="Salir" OnClick="Button2_Click" />
                                 </td>
                             </tr>
                         </table>

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace FormularioC2.Modulos
 {
@@ -11,7 +14,24 @@ namespace FormularioC2.Modulos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            String usuario = Request.QueryString["valor"];
+            try
+            {
+                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Sistema_Ventas"].ConnectionString);
+                string strSQL = "SELECT Nombre FROM Cliente WHERE NumeroDocumento ='" + usuario + "'";
+                SqlCommand com = new SqlCommand(strSQL, con);
+                con.Open();
+                SqlDataReader reader = com.ExecuteReader();
+                if (reader.Read())
+                {
+                    LabelAdmin.Text = reader.GetString(0);
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
 
+            }
         }
 
         protected void ibClientes_Click(object sender, ImageClickEventArgs e)

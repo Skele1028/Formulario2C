@@ -37,7 +37,7 @@ namespace FormularioC2.Modulos {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txDocumento;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txDocumento;
         
         /// <summary>
         /// Control txNombre.
@@ -46,7 +46,7 @@ namespace FormularioC2.Modulos {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txNombre;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txNombre;
         
         /// <summary>
         /// Control txSegundoNombre.
@@ -55,7 +55,7 @@ namespace FormularioC2.Modulos {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txSegundoNombre;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txSegundoNombre;
         
         /// <summary>
         /// Control txApellido.

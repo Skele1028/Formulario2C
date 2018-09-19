@@ -22,36 +22,39 @@ namespace FormularioC2.Modulos
         protected void btIngresar_Click(object sender, EventArgs e)
         {
             string tipoDocumento = txTipoDocumento.Text;
-            string Documento = txDocumento.Text;
-            string Nombre = txNombre.Text;
-            string SegundoNombre = txSegundoNombre.Text;
+            string Documento = txDocumento.Value;
+            string Nombre = txNombre.Value;
+            string SegundoNombre = txSegundoNombre.Value;
             string Apellido = txApellido.Text;
             string SegundoApellido = txSegundoApellido.Text;
             string Correo = txCorreo.Value;
             string Contrasenia = txContrasenia.Value;
+            Documento = Documento.Replace(".", string.Empty);
 
-            try
-            {
-                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Sistema_Ventas"].ConnectionString);
-                string strSQL = "INSERT INTO Cliente VALUES ('" + tipoDocumento + "','" + Documento + "','"
-                    + Nombre + "','" + SegundoNombre + "','" + Apellido + "','" + SegundoApellido + "','"
-                    + Correo + "','" + Contrasenia + "')";
-                SqlCommand com = new SqlCommand(strSQL, con);
-                con.Open();
-                com.ExecuteNonQuery();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
+            if (tipoDocumento != "" && Documento != "" && Nombre != "" && Apellido != "" && Correo != "" && Contrasenia != "") {
+                try
+                {
+                    SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Sistema_Ventas"].ConnectionString);
+                    string strSQL = "INSERT INTO Cliente VALUES ('" + tipoDocumento + "','" + Documento + "','"
+                        + Nombre + "','" + SegundoNombre + "','" + Apellido + "','" + SegundoApellido + "','"
+                        + Correo + "','" + Contrasenia + "')";
+                    SqlCommand com = new SqlCommand(strSQL, con);
+                    con.Open();
+                    com.ExecuteNonQuery();
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
 
+                }
+                vaciarCasillas();
             }
-            vaciarCasillas();
         }
 
         protected void vaciarCasillas(){
-            txDocumento.Text = "";
-            txNombre.Text = "";
-            txSegundoNombre.Text = "";
+            txDocumento.Value = "";
+            txNombre.Value = "";
+            txSegundoNombre.Value = "";
             txApellido.Text = "";
             txSegundoApellido.Text = "";
             txCorreo.Value = "";

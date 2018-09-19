@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.IO;
 
 namespace FormularioC2.Modulos
 {
@@ -14,12 +15,12 @@ namespace FormularioC2.Modulos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            leerUltimaFecha();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string usuario = txUser.Text;
+            string usuario = txUser.Value;
             string contrasenia = txContraseniaInicio.Value;
             string Documento = "";
             string ContraseniaDB = "";
@@ -43,12 +44,32 @@ namespace FormularioC2.Modulos
             }
             if (Documento == usuario && ContraseniaDB == contrasenia && Documento !="")
             {
-                Response.Redirect("perfil.aspx");
+                escribirUltimaFecha();
+                Response.Redirect("perfil.aspx?valor=" + usuario);
             }
             else
             {
                 ClientScript.RegisterStartupScript(GetType(), "id", "validar_inicio()", true);
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void escribirUltimaFecha(){
+            string path = Server.MapPath("/Scripts/fecha.txt");
+            DateTime now = DateTime.Now;
+            string fecha = now.ToString();
+            File.WriteAllText(path, fecha);
+        }
+
+        protected void leerUltimaFecha()
+        {
+            string path = Server.MapPath("/Scripts/fecha.txt");
+            string readText = File.ReadAllText(path);
+            LabelFecha.Text = readText.ToString();
         }
     }
 }

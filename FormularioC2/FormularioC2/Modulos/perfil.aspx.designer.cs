@@ -13,6 +13,15 @@ namespace FormularioC2.Modulos {
     public partial class perfil {
         
         /// <summary>
+        /// Control LabelAdmin.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelAdmin;
+        
+        /// <summary>
         /// Control lkSalir.
         /// </summary>
         /// <remarks>

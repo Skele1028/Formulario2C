@@ -40,13 +40,22 @@ namespace FormularioC2.Modulos {
         protected global::System.Web.UI.WebControls.Panel FormInicio;
         
         /// <summary>
+        /// Control LabelFecha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelFecha;
+        
+        /// <summary>
         /// Control txUser.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txUser;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txUser;
         
         /// <summary>
         /// Control txContraseniaInicio.
