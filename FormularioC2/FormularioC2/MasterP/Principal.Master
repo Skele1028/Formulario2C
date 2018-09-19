@@ -8,30 +8,25 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="../Style/style.css" rel="stylesheet" />
-    <style type="text/css">
-        .auto-style1 {
-            width: 855px;
-        }
-    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <table>
+    <form id="Principal" runat="server">
+        <div class="contentT">
+            <table class="table">
                 <tr>
-                    <td class="auto-style1">
-                        <asp:Panel ID="pnTittle" runat="server" BackColor="#9900FF">
+                    <td class="pn">
+                        <asp:Panel ID="pnTittle" runat="server">
                             <h3>Sistema de Ventas</h3></asp:Panel>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+                    <td class="ContentPH">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">
+                    <td class="pn">
                         <asp:Panel ID="pnEnd" runat="server" >
                         </asp:Panel>
                     </td>

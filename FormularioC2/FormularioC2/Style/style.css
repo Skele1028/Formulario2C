@@ -1,17 +1,112 @@
-﻿body {
-
-}
-#pnTittle {
-    background-color:  blueviolet;
-    width : 100%;
-}
-
+﻿
+/*Texto MP*/
 h3 {
     color: white;
     text-align: center;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-button{
-
+/*Paneles MP*/
+.pn {
+    background-color:  blueviolet;
 }
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:17px;
+}
+
+.button {
+    display: inherit;
+    border-radius: 5px;
+    margin-top: 12px;
+    width: 170px;
+    background-color: blueviolet;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.ContentBt {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*PlaceHolder*/
+.ContentPH {
+    padding: 20px;
+    width:100%;
+}
+
+
+.table {
+    width:100%;
+    border-spacing:30px;
+}
+
+td {
+    width: 50%;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/*REGISTRO*/
+/*tboxTextoRegistro*/
+.txbT{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/*tboxNumeroRegistro*/
+.txbN {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+ 
+/*PENDIENTE DEPENDIENDO DE LOS TXPARA CONTRASENA*/
+#table input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*FIN REGISTRO*/
+
+/*INICIO DE SECCION*/
+.txbTI {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #0094ff;
+    border-radius: 4px;
+}
+
+.tdIma{
+    width:auto;
+}
+
+.pnInit{
+    width:100%;
+}
+
+.tdText {
+    width: 14%;
+}
+
+/*FIN INICIO DE SECCION*/
+
