@@ -59,5 +59,10 @@ namespace FormularioC2.Modulos
             txContrasenia.Value = "";
             txContrasenia2.Value = "";
         }
+
+        protected void btSalir_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicioSeccion.aspx");
+        }
     }
 }

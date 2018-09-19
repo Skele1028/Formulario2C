@@ -8,7 +8,8 @@
             <td  colspan="3">
                 <label>Bienvenido Señor: </label> <label>User</label>
                 <div dir="rtl">
-                <asp:HyperLink ID="lkSalir" runat="server" CssClass="enlace" >Salir</asp:HyperLink></div>
+                <asp:HyperLink ID="lkSalir" runat="server" CssClass="enlace" NavigateUrl="~/Modulos/inicioSeccion.aspx">Salir</asp:HyperLink>
+                </div>
             </td>
         </tr>
         <tr>

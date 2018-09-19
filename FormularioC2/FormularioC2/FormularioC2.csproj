@@ -72,7 +72,9 @@
     <Content Include="Imagenes\Reporte.png" />
     <Content Include="Imagenes\User.PNG" />
     <Content Include="Modulos\inicioSeccion.aspx" />
-    <Content Include="Modulos\perfil.aspx" />
+    <Content Include="Modulos\perfil.aspx">
+      <BrowseToURL>~/Modulos/inicioSeccion.aspx</BrowseToURL>
+    </Content>
     <Content Include="Modulos\registro.aspx" />
     <Content Include="Scripts\InicioSesion.js" />
     <Content Include="Scripts\Registro.js" />
