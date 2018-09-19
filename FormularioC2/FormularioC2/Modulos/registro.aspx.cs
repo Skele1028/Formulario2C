@@ -28,7 +28,7 @@ namespace FormularioC2.Modulos
             string Apellido = txApellido.Text;
             string SegundoApellido = txSegundoApellido.Text;
             string Correo = txCorreo.Text;
-            string Contrasenia = txContrasenia.Text;
+            string Contrasenia = ;
 
             try
             {

@@ -70,6 +70,7 @@
     <Content Include="Modulos\inicioSeccion.aspx" />
     <Content Include="Modulos\perfil.aspx" />
     <Content Include="Modulos\registro.aspx" />
+    <Content Include="Scripts\Registro.js" />
     <Content Include="Style\style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

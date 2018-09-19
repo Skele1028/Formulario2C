@@ -7,7 +7,11 @@
     .auto-style3 {
         height: 51px;
     }
-</style>
+        .auto-style4 {
+            margin-left: 40px;
+        }
+    </style>
+    <script src="../Scripts/Registro.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Panel ID="Panel1" runat="server">
@@ -50,10 +54,12 @@
         </tr>
         <tr>
             <td>Contraseña (*):<br />
-                <asp:TextBox ID="txContrasenia" runat="server"></asp:TextBox>
+                <input id="txContrasenia" type="password" />
+                <br />
             </td>
-            <td>Confirmar contraseña (*):<br />
-                <asp:TextBox ID="txContrasenia2" runat="server"></asp:TextBox>
+            <td class="auto-style4">Confirmar contraseña (*):<br />
+                <input id="txContrasenia2" type="password" />
+                <br />
             </td>
         </tr>
         <tr>
@@ -63,7 +69,7 @@
         <tr>
             <td>&nbsp;</td>
             <td>
-                <asp:Button ID="btIngresar" runat="server" OnClick="btIngresar_Click" Text="Ingresar" />
+                <asp:Button ID="btIngresar" runat="server" onSubmit="return validar_clave()" OnClick="btIngresar_Click" Text="Ingresar" />
                 <asp:Button ID="btSalir" runat="server" Text="Salir" />
             </td>
         </tr>
