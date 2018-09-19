@@ -44,25 +44,27 @@
         </tr>
         <tr>
             <td>
-                <label>Correo electrónico (*):</label><br />
-                <asp:TextBox CssClass="txbT" type="email" ID="txCorreo" runat="server"></asp:TextBox>
+                <label>Correo electrónico (*):<br />
+                <input id="txCorreo" type="text" runat="server" ClientIDMode="Static"/>
+                </label><br />
             </td>
             <td>
                 <label>
-                Confirmar correo eletrónico (*):</label><br />
-                <asp:TextBox ID="txCorreo2" runat="server" CssClass="txbT" type="email"></asp:TextBox>
+                Confirmar correo eletrónico (*):<br />
+                <input id="txCorreo2" type="text" onchange="validar_correo()" runat="server" ClientIDMode="Static"/>
+                </label><br />
             </td>
         </tr>
         <tr>
             <td>
-                <label>Contraseña (*):</label><br />
-                <input type="password" id="txContrasenia"  />
+                <label>Contraseña (*):</label>
                 <br />
+                <input type="password" id="txContrasenia" runat="server" ClientIDMode="Static"/>
             </td>
             <td>
                 <label>
                 Confirmar contraseña (*):</label><br />
-                <input type="password" id="txContrasenia2"  />
+                <input type="password" id="txContrasenia2" onchange="validar_clave()" runat="server" ClientIDMode="Static"/>
                 <br />
             </td>
         </tr>

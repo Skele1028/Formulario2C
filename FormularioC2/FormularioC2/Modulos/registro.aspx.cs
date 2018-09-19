@@ -27,8 +27,8 @@ namespace FormularioC2.Modulos
             string SegundoNombre = txSegundoNombre.Text;
             string Apellido = txApellido.Text;
             string SegundoApellido = txSegundoApellido.Text;
-            string Correo = txCorreo.Text;
-            string Contrasenia = tx;
+            string Correo = txCorreo.Value;
+            string Contrasenia = txContrasenia.Value;
 
             try
             {
@@ -45,6 +45,19 @@ namespace FormularioC2.Modulos
             {
 
             }
+            vaciarCasillas();
+        }
+
+        protected void vaciarCasillas(){
+            txDocumento.Text = "";
+            txNombre.Text = "";
+            txSegundoNombre.Text = "";
+            txApellido.Text = "";
+            txSegundoApellido.Text = "";
+            txCorreo.Value = "";
+            txCorreo2.Value = "";
+            txContrasenia.Value = "";
+            txContrasenia2.Value = "";
         }
     }
 }
