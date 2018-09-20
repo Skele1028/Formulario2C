@@ -28,10 +28,12 @@ namespace FormularioC2.Modulos
             string Apellido = txApellido.Text;
             string SegundoApellido = txSegundoApellido.Text;
             string Correo = txCorreo.Value;
+            string Correo2 = txCorreo2.Value;
             string Contrasenia = txContrasenia.Value;
+            string Contrasenia2 = txContrasenia2.Value;
             Documento = Documento.Replace(".", string.Empty);
 
-            if (tipoDocumento != "" && Documento != "" && Nombre != "" && Apellido != "" && Correo != "" && Contrasenia != "") {
+            if (tipoDocumento != "" && Documento != "" && Nombre != "" && Apellido != "" && Correo != "" && Contrasenia != "" && Correo == Correo2 && Contrasenia == Contrasenia2) {
                 try
                 {
                     SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Sistema_Ventas"].ConnectionString);
