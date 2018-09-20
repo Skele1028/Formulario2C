@@ -18,18 +18,17 @@ label {
 }
 
 .button {
-    display: inherit;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-top: 12px;
     width: 170px;
     background-color: blueviolet;
-    padding-left: 10px;
-    padding-right: 10px;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     cursor: pointer;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .ContentBt {
@@ -92,25 +91,11 @@ input[type=text] {
     border-radius: 6px;
 }
 
-/*tboxNumeroRegistro*/
-.txbN {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.asteriscos {
+    color: red;
 }
- 
-/*PENDIENTE DEPENDIENDO DE LOS TXPARA CONTRASENA*/
-#table input[type="password"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+
+
 /*FIN REGISTRO*/
 
 /*INICIO DE SECCION*/

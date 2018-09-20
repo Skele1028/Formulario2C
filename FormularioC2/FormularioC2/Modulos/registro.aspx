@@ -8,8 +8,8 @@
     <asp:Panel ID="FormRegistro" runat="server">
     <table class="table">
         <tr>
-            <td>
-                <label>Tipo de documento (*):</label><br />
+            <td >
+                <label>Tipo de documento (</label><label Class="asteriscos">*</label><label>):</label><br />
                 <asp:DropDownList CssClass="txbT" ID="txTipoDocumento" runat="server">
                     <asp:ListItem>CC</asp:ListItem>
                     <asp:ListItem>TI</asp:ListItem>
@@ -17,7 +17,7 @@
                 </asp:DropDownList>
             </td>
             <td>
-                <label>Número de documento (*):</label><br />
+                <label>Número de documento (</label><label Class="asteriscos">*</label><label>):</label><br />
                 <label>
                 <input id="txDocumento" type="text" runat="server" ClientIDMode="Static" onkeypress="return checkDocumento(event)"/>
                 </label>
@@ -25,7 +25,7 @@
         </tr>
         <tr>
             <td>
-                <label>Nombre (*):</label><br />
+                <label>Nombre (</label><label Class="asteriscos">*</label><label>):</label><br />
                 <label>
                 <input id="txNombre" type="text" runat="server" ClientIDMode="Static" onkeypress="return checkNombre(event)"/>
                 </label>
@@ -39,7 +39,7 @@
         </tr>
         <tr>
             <td>
-                <label>Apellido (*):</label><br />
+                <label>Apellido (</label><label Class="asteriscos">*</label><label>):</label><br />
                 <asp:TextBox CssClass="txbT" type="text" ID="txApellido" runat="server"></asp:TextBox>
             </td>
             <td>
@@ -50,40 +50,37 @@
         </tr>
         <tr>
             <td>
-                <label>Correo electrónico (*):<br />
+                <label>Correo electrónico (</label><label Class="asteriscos">*</label><label>):<br />
                 <input id="txCorreo" type="text" runat="server" ClientIDMode="Static"/>
                 </label><br />
             </td>
             <td>
                 <label>
-                Confirmar correo eletrónico (*):<br />
+                Confirmar correo eletrónico (</label><label Class="asteriscos">*</label><label>):<br />
                 <input id="txCorreo2" type="text" onchange="validar_correo()" runat="server" ClientIDMode="Static"/>
                 </label><br />
             </td>
         </tr>
         <tr>
             <td>
-                <label>Contraseña (*):</label>
+                <label>Contraseña (</label><label Class="asteriscos">*</label><label>):</label>
                 <br />
                 <input type="password" id="txContrasenia" runat="server" ClientIDMode="Static"/>
             </td>
             <td>
                 <label>
-                Confirmar contraseña (*):</label><br />
+                Confirmar contraseña (</label><label Class="asteriscos">*</label><label>):</label><br />
                 <input type="password" id="txContrasenia2" onchange="validar_clave()" runat="server" ClientIDMode="Static"/>
                 <br />
             </td>
         </tr>
         <tr>
             <td></td>
-            <td class="ContentBt">
-                <asp:Button ID="btIngresar" runat="server" CssClass="button" OnClick="btIngresar_Click" onSubmit="return validar_clave()" Text="Ingresar" />
-                <asp:Button ID="btSalir" runat="server" CssClass="button" Text="Salir" OnClick="btSalir_Click" />
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
+            <td >
+                <div class="ContentBt">
+                <asp:Button ID="btIngresar" runat="server" CssClass="button" OnClick="btIngresar_Click" onSubmit="return validar_clave()" Text="Ingresar"/>
+                <asp:Button ID="btSalir" runat="server" CssClass="button" Text="   Salir   " OnClick="btSalir_Click" />
+            </div></td>
         </tr>
     </table>
 </asp:Panel>

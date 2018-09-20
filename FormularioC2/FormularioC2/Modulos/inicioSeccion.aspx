@@ -44,8 +44,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="tdText"></td>
-                                <td>
+                                <td ></td>
+                                <td class="ContentBt">
                                     <asp:Button ID="Button1" runat="server" CssClass="button" Text="Ingresar" OnClick="Button1_Click"/>
                                     <asp:Button ID="Button2" runat="server" CssClass="button" Text="Salir" OnClick="Button2_Click" />
                                 </td>
