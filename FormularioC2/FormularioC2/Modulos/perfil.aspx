@@ -16,7 +16,7 @@
         </tr>
         <tr>
             <td class="imageButton">
-                 <asp:ImageButton ID="ibClientes" runat="server" ImageUrl="~/Imagenes/Clientes.PNG" AlternateText="Clientes" Height="265px" Width="286px" />
+                 <asp:ImageButton ID="ibClientes" runat="server" ImageUrl="~/Imagenes/Clientes.PNG" AlternateText="Clientes" Height="265px" Width="286px" OnClick="ibClientes_Click" />
             </td>
             <td class="imageButton">
                  <asp:ImageButton ID="ibProductos" runat="server" ImageUrl="~/Imagenes/Productos.png" AlternateText="Productos" Height="267px" Width="273px" />

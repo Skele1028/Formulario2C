@@ -71,6 +71,7 @@
     <Content Include="Imagenes\Productos.png" />
     <Content Include="Imagenes\Reporte.png" />
     <Content Include="Imagenes\User.PNG" />
+    <Content Include="Modulos\Clientes.aspx" />
     <Content Include="Modulos\inicioSeccion.aspx" />
     <Content Include="Modulos\perfil.aspx">
       <BrowseToURL>~/Modulos/inicioSeccion.aspx</BrowseToURL>
@@ -90,6 +91,13 @@
     </Compile>
     <Compile Include="MasterP\Principal.Master.designer.cs">
       <DependentUpon>Principal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Modulos\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modulos\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modulos\inicioSeccion.aspx.cs">
       <DependentUpon>inicioSeccion.aspx</DependentUpon>

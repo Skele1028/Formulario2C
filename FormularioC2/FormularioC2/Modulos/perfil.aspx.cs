@@ -36,7 +36,7 @@ namespace FormularioC2.Modulos
 
         protected void ibClientes_Click(object sender, ImageClickEventArgs e)
         {
-
+            Response.Redirect("Clientes.aspx");
         }
 
         protected void ibProductos_Click(object sender, ImageClickEventArgs e)
@@ -44,9 +44,6 @@ namespace FormularioC2.Modulos
 
         }
 
-        protected void ibClientes_Click1(object sender, ImageClickEventArgs e)
-        {
-
-        }
+ 
     }
 }
