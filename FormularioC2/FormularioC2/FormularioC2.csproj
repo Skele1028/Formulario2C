@@ -68,9 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Imagenes\Clientes.PNG" />
+    <Content Include="Imagenes\login3.png" />
     <Content Include="Imagenes\Productos.png" />
     <Content Include="Imagenes\Reporte.png" />
-    <Content Include="Imagenes\User.PNG" />
+    <Content Include="jQuery\jquery-3.3.1.slim.min.js" />
     <Content Include="Modulos\Clientes.aspx" />
     <Content Include="Modulos\inicioSeccion.aspx" />
     <Content Include="Modulos\perfil.aspx">
@@ -78,7 +79,17 @@
     </Content>
     <Content Include="Modulos\registro.aspx" />
     <Content Include="Scripts\InicioSesion.js" />
+    <Content Include="Scripts\js\bootstrap.bundle.js" />
+    <Content Include="Scripts\js\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\js\bootstrap.js" />
+    <Content Include="Scripts\js\bootstrap.min.js" />
     <Content Include="Scripts\Registro.js" />
+    <Content Include="Style\css\bootstrap-grid.css" />
+    <Content Include="Style\css\bootstrap-grid.min.css" />
+    <Content Include="Style\css\bootstrap-reboot.css" />
+    <Content Include="Style\css\bootstrap-reboot.min.css" />
+    <Content Include="Style\css\bootstrap.css" />
+    <Content Include="Style\css\bootstrap.min.css" />
     <Content Include="Style\style.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -125,6 +136,17 @@
   <ItemGroup>
     <Content Include="MasterP\Principal.Master" />
     <None Include="packages.config" />
+    <Content Include="Scripts\js\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\js\bootstrap.js.map" />
+    <Content Include="Scripts\js\bootstrap.min.js.map" />
+    <Content Include="Style\css\.DS_Store" />
+    <Content Include="Style\css\bootstrap-grid.css.map" />
+    <Content Include="Style\css\bootstrap-grid.min.css.map" />
+    <Content Include="Style\css\bootstrap-reboot.css.map" />
+    <Content Include="Style\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Style\css\bootstrap.css.map" />
+    <Content Include="Style\css\bootstrap.min.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

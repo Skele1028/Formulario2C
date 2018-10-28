@@ -40,9 +40,13 @@ function checkNombre(e) {
     if (tecla == 8) {
         return true;
     }
-
+    if (tecla == 9) {
+        return true;
+    } if (tecla == 11) {
+        return true;
+    }
     // Patron de entrada, en este caso solo acepta letras
-    patron = /[A-Za-z]/;
+    patron = "[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+";
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
 }

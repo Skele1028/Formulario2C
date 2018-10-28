@@ -7,16 +7,19 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="../Style/style.css" rel="stylesheet" />
+    <script src="../jQuery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../Scripts/js/bootstrap.min.js"></script>
+    <link href="../Style/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
     <form id="Principal" runat="server">
-        <div class="contentT">
-            <table class="table">
+        <div class="container">
+            <table class="table border-0">
                 <tr>
-                    <td class="pn">
-                        <asp:Panel ID="pnTittle" runat="server">
-                            <h3>Sistema de Ventas</h3></asp:Panel>
+                    <td class="text-center">
+                        <asp:Panel ID="pnTittle" CssClass="card-header bg-violet text-white"  runat="server">
+                            <h3 class="font-weight-bold ">Sistema de Ventas</h3>
+                        </asp:Panel>
                     </td>
                 </tr>
                 <tr>
@@ -27,7 +30,8 @@
                 </tr>
                 <tr>
                     <td class="pn">
-                        <asp:Panel ID="pnEnd" runat="server" >
+                        <asp:Panel ID="pnEnd" CssClass="card-footer bg-violet text-white" runat="server" >
+                            <br />
                         </asp:Panel>
                     </td>
                 </tr>
