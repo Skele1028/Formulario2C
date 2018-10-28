@@ -26,7 +26,6 @@
                 <td>
                     <label>Nombre (</label><label class="text-danger">*</label><label>):</label><br />
                     <input id="txNombre" class="form-control w-100" type="text" runat="server" clientidmode="Static" onkeypress="return checkNombre(event)" />
-
                 </td>
                 <td>
                     <label>Segundo nombre:</label><br />

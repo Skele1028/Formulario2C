@@ -6,10 +6,10 @@
     <script src="../Scripts/InicioSesion.js"></script>
     <link href="../Style/css/bootstrap.css" rel="stylesheet" />
 
-    <asp:Panel ID="FormIniSeccion" runat="server">
+    <asp:Panel ID="FormIniSeccion" runat="server"  CssClass="h-auto">
         <table class="table border-0">
             <tr>
-                <td class="w-25 pt-5">
+                <td class="text-center w-25 align-middle">
                     <asp:Image ID="ImaUSer" runat="server" class="rounded float-left" ImageUrl="~/Imagenes/login3.png" />
                 </td>
                 <td class="w-75">

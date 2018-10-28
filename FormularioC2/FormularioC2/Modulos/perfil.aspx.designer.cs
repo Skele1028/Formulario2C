@@ -22,13 +22,13 @@ namespace FormularioC2.Modulos {
         protected global::System.Web.UI.WebControls.Label LabelAdmin;
         
         /// <summary>
-        /// lkSalir control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lkSalir;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
         /// ibClientes control.

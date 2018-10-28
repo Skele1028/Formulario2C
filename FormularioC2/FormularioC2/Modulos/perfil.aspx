@@ -1,29 +1,28 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterP/Principal.Master" AutoEventWireup="true" CodeBehind="perfil.aspx.cs" Inherits="FormularioC2.Modulos.perfil" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
- 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="table">
         <tr>
-            <td  colspan="3">
-                <label>Bienvenido Señ@r:
+            <td colspan="2">
+                <label>Bienvenido Señ@r: </label>
                 <asp:Label ID="LabelAdmin" runat="server" Font-Bold="True" Text="Admin"></asp:Label>
-                </label>
-&nbsp;<div dir="rtl">
-                <asp:HyperLink ID="lkSalir" runat="server" CssClass="enlace" NavigateUrl="~/Modulos/inicioSeccion.aspx">Salir</asp:HyperLink>
-                </div>
+            </td>
+            <td>
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="nav-link text-right w-auto" NavigateUrl="~/Modulos/inicioSeccion.aspx">Salir</asp:HyperLink>
             </td>
         </tr>
         <tr>
-            <td class="imageButton">
-                 <asp:ImageButton ID="ibClientes" runat="server" ImageUrl="~/Imagenes/Clientes.PNG" AlternateText="Clientes" Height="265px" Width="286px" OnClick="ibClientes_Click" />
+            <td class="text-center">
+                <asp:ImageButton ID="ibClientes" CssClass="rounded" runat="server" ImageUrl="~/Imagenes/Clientes.PNG" AlternateText="Clientes" Height="265px" Width="286px" OnClick="ibClientes_Click" />
             </td>
-            <td class="imageButton">
-                 <asp:ImageButton ID="ibProductos" runat="server" ImageUrl="~/Imagenes/Productos.png" AlternateText="Productos" Height="267px" Width="273px" />
+            <td class="text-center">
+                <asp:ImageButton ID="ibProductos" CssClass="rounded" runat="server" ImageUrl="~/Imagenes/Productos.png" AlternateText="Productos" Height="267px" Width="273px" />
             </td>
-            <td class="imageButton">
-                <asp:ImageButton ID="ibReportes" runat="server"  ImageUrl="~/Imagenes/Reporte.png" AlternateText="Reportes" Height="258px" Width="242px" />
+            <td class="text-center">
+                <asp:ImageButton ID="ibReportes" CssClass="rounded" runat="server" ImageUrl="~/Imagenes/Reporte.png" AlternateText="Reportes" Height="258px" Width="242px" />
             </td>
         </tr>
-        </table>
+    </table>
 </asp:Content>
