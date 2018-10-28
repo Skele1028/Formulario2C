@@ -10,7 +10,9 @@
                 <asp:Label ID="LabelAdmin" runat="server" Font-Bold="True" Text="Admin"></asp:Label>
             </td>
             <td>
-                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="nav-link text-right w-auto" NavigateUrl="~/Modulos/inicioSeccion.aspx">Salir</asp:HyperLink>
+                <div class="text-right">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Modulos/inicioSeccion.aspx"><u class="nav-link font-weight-bold">Salir</u></asp:HyperLink>
+                </div>
             </td>
         </tr>
         <tr>
