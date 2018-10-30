@@ -49,8 +49,8 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <asp:Button ID="btIngresar" runat="server" CssClass="btn btn-primary btn-lg w-25 ml-3 mr-5" data-toggle="button" Text="Ingresar" OnClick="Button1_Click" /> 
-                                    <asp:Button ID="btCancelar" runat="server" CssClass="btn btn-primary btn-lg w-25" Text="Salir" OnClick="Button2_Click" />
+                                    <asp:Button ID="btIngresar" runat="server" class="btn btn-primary btn-lg w-25 ml-3 mr-5" Text="Ingresar" OnClick="btIngresar_Click" />
+                                    <asp:Button ID="btSalir" runat="server" class="btn btn-primary btn-lg w-25 ml-3 mr-5" Text="Salir" OnClick="Salir_Click"/>
                                 </td>
                             </tr>
                         </table>

@@ -3,15 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Style/css/bootstrap.css" rel="stylesheet" />
     <script src="../Scripts/Registro.js"></script>
-    <script src="../jQuery/jquery-3.3.1.slim.min.js"></script>
-        <script src="../Scripts/js/bootstrap.min.js"></script>
-    <script src="../Scripts/JavaScript.js"></script>
-    <script src="../../assets/js/vendor/holder.min.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <asp:Panel ID="FormRegistro" runat="server" class="needs-validation was-validated novalidate">
+    <asp:Panel ID="FormRegistro" runat="server" > 
+        <form>
         <table class="table">
             <tr>
                 <td class="w-50">
@@ -24,15 +21,13 @@
                 </td>
                 <td class="w-50">
                     <label>Número de documento (</label><label class="text-danger">*</label><label>):</label><br />
-                    <input id="txDocumento" class="form-control" type="text" runat="server" clientidmode="Static" onkeypress="return checkDocumento(event)" required autofocus/>
-                    <div class="invalid-feedback">Numero de documento es requerido</div>
+                    <input id="txDocumento" class="form-control" type="number" runat="server" clientidmode="Static" onkeypress="return checkDocumento(event)" required />
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Nombre (</label><label class="text-danger">*</label><label>):</label><br />
                     <input id="txNombre" class="form-control w-100" type="text" runat="server" clientidmode="Static" onkeypress="return checkNombre(event)" required/>
-                    <div class="invalid-feedback">Nombre es requerido</div>
                 </td>
                 <td>
                     <label>Segundo nombre:</label><br />
@@ -42,8 +37,7 @@
             <tr>
                 <td>
                     <label>Apellido (</label><label class="text-danger">*</label><label>):</label><br />
-                    <asp:TextBox class="form-control" type="text" ID="txApellido" runat="server" ></asp:TextBox>
-                    <div class="invalid-feedback">Apellido es requerido</div>
+                    <asp:TextBox class="form-control" type="text" ID="txApellido" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <label>Segundo apellido:</label><br />
@@ -53,38 +47,36 @@
             <tr>
                 <td>
                     <label>Correo electrónico (</label><label class="text-danger">*</label><label>):</label><br />
-                    <input id="txCorreo" class="form-control" type="text" runat="server" clientidmode="Static" required />
-                    <div class="invalid-feedback">Correo electrónico es requerido</div>
+                   
+                    <input id="txCorreo" type="email" onchange="validar_correo()" runat="server" ClientIDMode="Static" class="form-control" required />
                     <br />
                 </td>
                 <td>
                     <label>Confirmar correo eletrónico (</label><label class="text-danger">*</label><label>):</label><br />
-                    <input id="txCorreo2" class="form-control" type="text" onchange="validar_correo()" runat="server" clientidmode="Static" required/>
-                    <div class="invalid-feedback">Confirmacion de correo electrónico es requerido</div>
+                    <input id="txCorreo2" type="email"   onchange="validar_correo()" runat="server" clientidmode="Static"   class="form-control" required/>
                     <br />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label>Contraseña (</label><label class="text-danger">*</label><label>):</label>
-                    <br />
-                    <input type="password" id="txContrasenia" class="form-control" runat="server" clientidmode="Static" />
-                    <div class="invalid-feedback">Nombre es requerido</div>
+                    <label>Contraseña (</label><label class="text-danger">*</label><label>):</label><br />
+                    <input type="password" id="txContrasenia" class="form-control" runat="server" clientidmode="Static" required/>
                 </td>
                 <td>
                     <label>
                         Confirmar contraseña (</label><label class="text-danger">*</label><label>):</label><br />
-                    <input type="password" id="txContrasenia2" class="form-control" onchange="validar_clave()" runat="server" clientidmode="Static" />
-                    <br />
+                    <input type="password" id="txContrasenia2" class="form-control" onchange="validar_clave()" runat="server" clientidmode="Static" required/>
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td class="flex-column">
-                    <asp:Button ID="btIngresar" runat="server" CssClass="btn btn-primary btn-lg w-25 ml-5 mmr-5" data-toggle="button" OnClick="btIngresar_Click" onSubmit="return validar_clave()" Text="Ingresar" />
-                    <asp:Button ID="btSalir" runat="server" CssClass="btn btn-primary btn-lg w-25 ml-5 mr-5" data-toggle="button" Text="Salir" OnClick="btSalir_Click" />
-                </td>
+                    <asp:Button ID="btRegistrar" runat="server" class="btn btn-primary btn-lg w-25 ml-5 mr-5" Text="Registrar" OnClick="btRegistrar_Click" onSubmit="return validar_clave()"/>
+                    
+                    <a href="inicioSeccion.aspx"><input id="btSalir" type="button"  value="Salir" class="btn btn-primary btn-lg w-25 ml-5 mr-5"/></a>
+                    </td>
             </tr>
         </table>
+            </form>  
     </asp:Panel>
 </asp:Content>

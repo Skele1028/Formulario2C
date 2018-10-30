@@ -13,7 +13,7 @@
             <Columns>
                 <asp:TemplateField HeaderText="Tipo">
                     <ItemTemplate>
-                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("TipoDocumeto") %>'></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("TipoDocumento") %>'></asp:Label>
                     </ItemTemplate>
                     <HeaderStyle CssClass="GridView" />
                     <ItemStyle CssClass="GridView" />

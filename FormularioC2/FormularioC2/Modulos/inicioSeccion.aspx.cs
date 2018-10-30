@@ -18,7 +18,7 @@ namespace FormularioC2.Modulos
             leerUltimaFecha();
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btIngresar_Click(object sender, EventArgs e)
         {
             string usuario = txUser.Value;
             string contrasenia = txContraseniaInicio.Value;
@@ -53,7 +53,7 @@ namespace FormularioC2.Modulos
             }
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void Salir_Click(object sender, EventArgs e)
         {
             
         }
@@ -71,5 +71,6 @@ namespace FormularioC2.Modulos
             string readText = File.ReadAllText(path);
             LabelFecha.Text = readText.ToString();
         }
+
     }
 }

@@ -37,7 +37,7 @@ namespace FormularioC2.Modulos {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txDocumento;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txDocumento;
         
         /// <summary>
         /// txNombre control.
@@ -82,7 +82,7 @@ namespace FormularioC2.Modulos {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txCorreo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txCorreo;
         
         /// <summary>
         /// txCorreo2 control.
@@ -91,7 +91,7 @@ namespace FormularioC2.Modulos {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txCorreo2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txCorreo2;
         
         /// <summary>
         /// txContrasenia control.
@@ -112,21 +112,12 @@ namespace FormularioC2.Modulos {
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword txContrasenia2;
         
         /// <summary>
-        /// btIngresar control.
+        /// btRegistrar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btIngresar;
-        
-        /// <summary>
-        /// btSalir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btSalir;
+        protected global::System.Web.UI.WebControls.Button btRegistrar;
     }
 }
