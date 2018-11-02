@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Style/css/bootstrap.css" rel="stylesheet" />
     <script src="../Scripts/Registro.js"></script>
+    <script src="../jQuery/jquery-3.3.1.slim.min.js"></script>
+   
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -21,7 +23,8 @@
                 </td>
                 <td class="w-50">
                     <label>Número de documento (</label><label class="text-danger">*</label><label>):</label><br />
-                    <input id="txDocumento" class="form-control" type="number" runat="server" clientidmode="Static" onkeypress="return checkDocumento(event)" required />
+                    
+                    <input id="txDocumento" class="form-control" type="text" runat="server" clientidmode="Static" onkeypress="return checkDocumento(event)" required/>
                 </td>
             </tr>
             <tr>
@@ -48,24 +51,26 @@
                 <td>
                     <label>Correo electrónico (</label><label class="text-danger">*</label><label>):</label><br />
                    
-                    <input id="txCorreo" type="email" onchange="validar_correo()" runat="server" ClientIDMode="Static" class="form-control" required />
+                    <input id="txCorreo" type="text" onchange="validar_correo()" runat="server" ClientIDMode="Static" class="form-control" required />
                     <br />
                 </td>
                 <td>
                     <label>Confirmar correo eletrónico (</label><label class="text-danger">*</label><label>):</label><br />
-                    <input id="txCorreo2" type="email"   onchange="validar_correo()" runat="server" clientidmode="Static"   class="form-control" required/>
+                    <input id="txCorreo2" type="text"   onchange="validar_correo()" runat="server" clientidmode="Static"   class="form-control" required/>
                     <br />
                 </td>
             </tr>
             <tr>
-                <td>
-                    <label>Contraseña (</label><label class="text-danger">*</label><label>):</label><br />
+                <td class="auto-style1">
+                    <label>Contraseña (</label><label class="text-danger">*</label><label>):
+                    </label><br />
                     <input type="password" id="txContrasenia" class="form-control" runat="server" clientidmode="Static" required/>
                 </td>
-                <td>
+                <td class="auto-style1">
                     <label>
                         Confirmar contraseña (</label><label class="text-danger">*</label><label>):</label><br />
                     <input type="password" id="txContrasenia2" class="form-control" onchange="validar_clave()" runat="server" clientidmode="Static" required/>
+                    <asp:CompareValidator ID="CompareValidator2" runat="server" ErrorMessage="Las contraseñas introducidas no son iguales" ControlToCompare="txContrasenia2" ControlToValidate="txContrasenia" ForeColor="Red"></asp:CompareValidator>
                 </td>
             </tr>
             <tr>

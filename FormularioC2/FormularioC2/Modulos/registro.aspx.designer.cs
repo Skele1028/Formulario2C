@@ -37,7 +37,7 @@ namespace FormularioC2.Modulos {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txDocumento;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txDocumento;
         
         /// <summary>
         /// txNombre control.
@@ -82,7 +82,7 @@ namespace FormularioC2.Modulos {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txCorreo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txCorreo;
         
         /// <summary>
         /// txCorreo2 control.
@@ -91,7 +91,7 @@ namespace FormularioC2.Modulos {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txCorreo2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txCorreo2;
         
         /// <summary>
         /// txContrasenia control.
@@ -110,6 +110,15 @@ namespace FormularioC2.Modulos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword txContrasenia2;
+        
+        /// <summary>
+        /// CompareValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator2;
         
         /// <summary>
         /// btRegistrar control.
